@@ -1,33 +1,30 @@
-// Ini adalah string
+// This is a string
 "This is a string";
 
-// Ini adalah number
+// This is a number
 123;
 
-// Ini juga number
+// This is also a number
 12.5;
 
-// Ini adalah boolean
+// This is a boolean
 false;
 
-// Ini juga boolean
-true;
-
-// Ini adalah null
+// This is a null
 null;
 
-// Ini adalah undefined
+// This is an undefined
 undefined;
 
-// Ini adalah array
+// This is an array
 [1, 2, "Hallo", false, null, undefined];
 
-// Ini adalah objek
-const objek = { key: "value" };
-
-// Objek lain
+// This is an object
 const orang = {
     nama: "Danil",
     tinggi: 166,
     berat: 56,
 };
+
+// This is built-in object
+const tanggal = new Date();

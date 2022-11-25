@@ -1,10 +1,16 @@
-// Cara lama, tidak recommended untuk digunakan
+/** =====================
+ *      The old way
+ * ====================== */
 var pakaiVar = "Ini pakai var";
 var tinggi = 156;
 var mahal = true;
 
-// Gunakan ini by default
+/** =====================
+ *      The new ways
+ * ====================== */
+
+// Use this by default
 const pakaiConst = "Ini pakai const";
 
-// var versi modern
+// Otherwise use this if you need to change the value
 let pakaiLet = "Ini pakai let";

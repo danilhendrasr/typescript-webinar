@@ -1,3 +1,6 @@
+/** =====================
+ *      If statement
+ * ====================== */
 const bagPrice = 100_000;
 
 const isBagExpensive = bagPrice > 150_000;
@@ -12,18 +15,27 @@ if (isBagExpensive) {
     console.log("This bag is cheap!");
 }
 
-// const shoeType = "sepatu";
+/** =====================
+ *   Ternary expression
+ * ====================== */
+const toPrint = isBagCheap ? "Bag is cheap" : "Bag is expensive";
+console.log(toPrint);
 
-// switch (shoeType) {
-//     case "sneakers":
-//         console.log("This is a snakers");
-//         break;
-//     case "running shoe":
-//         console.log("I'm fast boy");
-//         break;
-//     case "boots":
-//         console.log("Look at my boots");
-//         break;
-//     default:
-//         console.log("not found");
-// }
+/** =====================
+ *    Switch statement
+ * ====================== */
+const shoeType = "sepatu";
+
+switch (shoeType) {
+    case "sneakers":
+        console.log("This is a snakers");
+        break;
+    case "running shoe":
+        console.log("I'm fast boy");
+        break;
+    case "boots":
+        console.log("Look at my boots");
+        break;
+    default:
+        console.log("not found");
+}
