@@ -2,6 +2,7 @@ import { program } from "commander";
 import { addNewTask } from "./commands/add.mjs";
 import { deleteTask } from "./commands/delete.mjs";
 import { listTasks } from "./commands/list.mjs";
+import { updateTask } from "./commands/update.mjs";
 
 program.command("list").description("List all tasks.").action(listTasks);
 
@@ -15,7 +16,10 @@ program
 program
     .command("update")
     .description("Update a task.")
-    .action(() => console.log("update"));
+    .argument("<id>", "The ID of the task to be updated")
+    .argument("[title]", "The new title, fill with undefined if not changed.")
+    .argument("[description]", "The new description")
+    .action((id, title, description) => updateTask(id, title, description));
 
 program
     .command("delete")
