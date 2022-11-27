@@ -1,4 +1,5 @@
 import { program } from "commander";
+import { addNewTask } from "./commands/add.mjs";
 import { listTasks } from "./commands/list.mjs";
 
 program.command("list").description("List all tasks.").action(listTasks);
@@ -6,7 +7,9 @@ program.command("list").description("List all tasks.").action(listTasks);
 program
     .command("add")
     .description("Add new task")
-    .action(() => console.log("Add new task."));
+    .argument("<title>", "Title of the new task.")
+    .argument("[description]", "Description of the new task.")
+    .action((title, description) => addNewTask(title, description));
 
 program
     .command("update")
