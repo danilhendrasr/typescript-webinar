@@ -1,6 +1,4 @@
-/** =====================
- *      Regular class
- * ====================== */
+//region Regular class
 class Human {
     constructor(height, weight) {
         this.height = height;
@@ -12,9 +10,9 @@ const person = new Human(180, 72);
 console.log(person.height);
 console.log(person.weight);
 
-/** =====================
- *   Class inheritance
- * ====================== */
+//endregion
+
+//region Class inheritance
 class Worker extends Human {
     #occupation;
 
@@ -34,3 +32,5 @@ class Worker extends Human {
 
 const worker = new Worker(180, 72, "Engineer");
 console.log(worker.occupation);
+
+//endregion

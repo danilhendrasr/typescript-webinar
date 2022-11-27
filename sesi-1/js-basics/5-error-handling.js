@@ -1,6 +1,4 @@
-/** =====================
- *    Try-catch-finally
- * ====================== */
+//region Try-catch-finally
 try {
     const x = 10;
     x / 5;
@@ -9,10 +7,9 @@ try {
 } finally {
     console.log("This will always get executed.");
 }
+//endregion
 
-/** =================================
- *    Try catch inside a function
- * ================================== */
+//region Try catch inside a function
 function createArray(length) {
     try {
         const newArray = new Array(length);
@@ -25,3 +22,4 @@ function createArray(length) {
 
 createArray(10);
 createArray(-1);
+//endregion

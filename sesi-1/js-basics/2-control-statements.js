@@ -1,6 +1,5 @@
-/** =====================
- *      If statement
- * ====================== */
+//region Regular if statement
+// TODO: Tinker around with below variable's value
 const bagPrice = 100_000;
 
 const isBagExpensive = bagPrice > 150_000;
@@ -14,16 +13,15 @@ if (isBagExpensive) {
 } else {
     console.log("This bag is cheap!");
 }
+//endregion
 
-/** =====================
- *   Ternary expression
- * ====================== */
+//region Ternary expression
 const toPrint = isBagCheap ? "Bag is cheap" : "Bag is expensive";
 console.log(toPrint);
+//endregion
 
-/** =====================
- *    Switch statement
- * ====================== */
+//region Switch statement
+// TODO: tinker around with below variable's value
 const shoeType = "sepatu";
 
 switch (shoeType) {
@@ -39,3 +37,4 @@ switch (shoeType) {
     default:
         console.log("not found");
 }
+//endregion
