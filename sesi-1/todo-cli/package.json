@@ -2,15 +2,14 @@
     "name": "todo-cli",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "main.mjs",
+    "types": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "commander": "^9.4.1",
         "uuid": "^9.0.0"
     }
 }

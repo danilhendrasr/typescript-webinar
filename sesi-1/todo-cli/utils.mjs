@@ -1,11 +1,12 @@
 import { readFileSync, writeFileSync } from "fs";
-import path from "path";
 
-export function readJSONData() {
+// Read data from data.json
+export function readData() {
     return JSON.parse(readFileSync("./data.json"));
 }
 
+// Write to data.json
 export function writeData(data) {
     const toWrite = JSON.stringify(data);
-    writeFileSync(path.resolve("./data.json"), toWrite);
+    writeFileSync("./data.json", toWrite);
 }

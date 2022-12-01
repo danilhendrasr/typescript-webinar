@@ -1,15 +1,1 @@
-[
-    { "id": "asdf", "title": "Buy a milk", "description": "Buy a 60L milk." },
-    {
-        "id": "d0045a50-44f3-43ab-b32f-426c442422c2",
-        "title": "Testing",
-        "description": "hehe"
-    },
-    { "id": "6be2551a-7cae-42d5-8086-17b54b69e73a", "title": "Heytayo" },
-    {
-        "id": "dba53ace-e5be-4799-b50f-4d0cade8ab5c",
-        "title": "New",
-        "description": "task"
-    },
-    { "id": "19d8cdc7-27b1-43bb-a281-c31113555748", "title": "New task" }
-]
+[]
