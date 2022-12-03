@@ -1,9 +1,9 @@
 {
-    "name": "todo-cli",
+    "name": "todo-cli-webinar",
     "version": "1.0.0",
     "description": "",
-    "main": "main.mjs",
-    "types": "module",
+    "main": "index.js",
+    "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
