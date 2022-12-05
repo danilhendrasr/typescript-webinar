@@ -1,12 +1,15 @@
 {
-    "name": "todo-cli",
+    "name": "todo-cli-webinar",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "typescript": "^4.9.3",
+        "uuid": "^9.0.0"
+    }
 }
