@@ -1,11 +1,13 @@
 import express, { Request } from "express";
-import { TaskObject } from "./types";
+import { TaskObject, TaskStatus } from "./types";
 import { v4 as uuidv4 } from "uuid";
 import { DataSource } from "typeorm";
 import { Task } from "./entities/task.entity";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const dataSource = new DataSource({
     type: "sqlite",
@@ -55,12 +57,12 @@ app.post(
             id: uuidv4(),
             title: title,
             description: description,
-            status: status,
+            status: TaskStatus.OPEN,
         };
 
         const insertedTask = await dataSource.getRepository(Task).save(newTask);
 
-        res.status(201).send({
+        res.send({
             data: insertedTask,
             message: "Successfully created the task.",
         });
