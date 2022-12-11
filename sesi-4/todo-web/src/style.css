@@ -1,0 +1,66 @@
+main {
+    width: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: lightgrey;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.delete-task-btn {
+    border: none;
+    border-radius: 50%;
+    padding: 3px 5px;
+    box-sizing: border-box;
+}
+
+.delete-task-btn:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+#new-task-btn {
+    padding: 5px 10px;
+}
+
+#new-task-frm-wrapper {
+    margin-top: 10px;
+}
+
+#new-task-inputs-wrapper {
+    margin: 10px 0;
+}
+
+#new-task-frm-wrapper input {
+    padding: 5px 10px;
+}
+
+#new-task-frm-cancel {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}

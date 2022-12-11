@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Todo Web App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <h1>Todo Web App</h1>
+            <ul id="tasks-container">
+            </ul>
+
+            <button id="new-task-btn">Add new task</button>
+
+            <div id="new-task-frm-wrapper" style="display: none;">
+                <form id="new-task-frm">
+                    <div id="new-task-inputs-wrapper">
+                        <input type="text" id="new-task-title" placeholder="Title" />
+                        <input type="text" id="new-task-description" placeholder="Description" />
+                    </div>
+                    <input type="submit" value="Save" />
+                    <button id="new-task-frm-cancel" type="button">Cancel</button>
+                </form>
+            </div>
+        </main>
+
+        <script type="module" src="index.ts"></script>
+    </body>
+</html>
